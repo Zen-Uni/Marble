@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        // const useGet = (url) => {
+        //     return axios.get(url)
+        // }
+
+        // const res = useGet('http://127.0.0.1:5500/test/data.json')
+        // const res = 
+        // res.then(res => {
+        //     console.log(res.data)
+        // })
+
+        axios.get('http://127.0.0.1:5500/test/data.json')
+        .then(res => {
+            console.log(res.data)
+        })
+    </script>
+</body>
+</html>

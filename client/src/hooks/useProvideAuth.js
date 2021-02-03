@@ -9,14 +9,19 @@ import React, { useState } from 'react';
 function useProvideAuth() {
     const [user, setUser] = useState(null)
     const [auth, setAuth] = useState(false)
+    const [email, setEmail] = useState(null)
 
-    const signin = () => {
+    const signin = config => {
+        const { username, email } = config
         setAuth(true)
-        setUser('Uni')
+        setUser(username)
+        setEmail(email)
     }
 
     const signout = () => {
         setAuth(false)
+        setUser(null)
+        setEmail(null)
     }
 
     return {

@@ -4,6 +4,7 @@ import { Button } from 'antd';
 
 
 const handleSignOut = (auth, cb) => {
+    window.localStorage.removeItem('marble-config')
     auth.signout()
     cb()
 }
