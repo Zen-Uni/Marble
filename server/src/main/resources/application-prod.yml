@@ -1,0 +1,6 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://39.107.88.171:3306/app_marble
+        username: app_marble
+        password: xxxxxxxxxx

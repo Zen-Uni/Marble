@@ -1,0 +1,17 @@
+server:
+    port: 7878
+
+spring:
+    profiles:
+        active: dev
+    mail:
+        default-encoding: utf-8
+        host: smtp.163.com
+        username: we_found_404@163.com
+        password: YVSUHVTEDLZAOYMD
+
+mybatis:
+    mapper-locations: classpath:mapper/*Mapper.xml
+    type-aliases-package: com.isleslie.marble.domain.entity
+    configuration:
+        map-underscore-to-camel-case: true
