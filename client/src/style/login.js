@@ -10,7 +10,5 @@ export const loginLayout = {
 }
 
 export const loginButtonLayout = {
-    // display: "flex",
-    // "justify-content": "center"
     textAlign: "center"
 }

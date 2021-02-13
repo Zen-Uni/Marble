@@ -11,7 +11,11 @@ import {
   Login,
   Register,
   NotFound,
-  Main
+  Main,
+  WelcomePage,
+  Tech,
+  Project,
+  User,
 } from './components'
 import { useAuth } from './hooks';
 
@@ -29,8 +33,21 @@ function RouterConfig() {
                 <Route path="/login" exact>
                     <Login/>
                 </Route>
-                <Route path="/main" exact>
-                    <Main/>
+                <Route path="/main">
+                    <Main>
+                        <Route path="/main" exact>
+                            <WelcomePage/>
+                        </Route>
+                        <Route path="/main/project" exact>
+                            <Project/>
+                        </Route>
+                        <Route path="/main/user" exact>
+                            <User/>
+                        </Route>
+                        <Route path="/main/tech" exact>
+                            <Tech/>
+                        </Route>
+                    </Main>
                 </Route>
                 <Route path="/" exact>
                     {

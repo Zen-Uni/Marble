@@ -4,5 +4,14 @@
  */
 
 import Main from './Main'
-
-export default Main
+import WelcomePage from './Welcome'
+import Tech from './Tech'
+import User from './User'
+import Project from './Project'
+export  {
+    Main,
+    WelcomePage,
+    Tech,
+    User,
+    Project,
+}
