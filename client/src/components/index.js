@@ -7,7 +7,13 @@
 import Login from './Login'
 import Register from './Register'
 import NotFound from './NotFound'
-import Main from './main'
+import {
+    Main,
+    WelcomePage,
+    Tech,
+    Project,
+    User,
+} from './main'
 import TestSignOut from './TestSignOut'
 
 export {
@@ -16,4 +22,8 @@ export {
     NotFound,
     Main,
     TestSignOut,
+    WelcomePage,
+    Tech,
+    Project,
+    User,
 }
